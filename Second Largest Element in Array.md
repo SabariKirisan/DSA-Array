@@ -35,6 +35,10 @@ class Solution {
     }
 };
 ```
+## Complexity
+- Time complexity : O(n)
+
+- Space complexity : O(1)
 
 ## OUTPUT
 Output: 34
