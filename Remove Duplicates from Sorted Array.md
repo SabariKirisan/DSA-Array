@@ -36,4 +36,4 @@ public:
 ```
 
 ## OUTPUT
-Output: true
+Output: 5
