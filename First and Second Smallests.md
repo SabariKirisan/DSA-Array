@@ -38,9 +38,9 @@ class Solution {
 ```
 
 ## Complexity
-- Time complexity :
+- Time complexity : O(n)
 
-- Space complexity :
+- Space complexity : O(1)
 
 
 ## OUTPUT
