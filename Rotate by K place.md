@@ -26,9 +26,9 @@ public:
 ```
 
 ## Complexity
-- Time complexity :
+- Time complexity : O(n)
 
-- Space complexity :
+- Space complexity : O(1)
 
 ## OUTPUT
 Output: [5,6,7,1,2,3,4]
