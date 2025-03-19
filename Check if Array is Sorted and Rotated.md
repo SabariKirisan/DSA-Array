@@ -20,10 +20,16 @@ public:
     bool check(vector<int>& nums) {
         int n=nums.size();
         int cnt=0;
+        int swap=0;
         for(int i=0;i<n;i++)
         {
-            if(nums[i] > nums[(i+1)%n]) cnt++;
+            if(nums[i] > nums[(i+1) % n]) 
+            {
+                swap=1;
+                cnt++;
+            }
         }
+        if(swap==0) return true;
         return (cnt==1);     
     }
 };
