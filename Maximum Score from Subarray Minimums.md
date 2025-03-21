@@ -25,15 +25,13 @@ class Solution {
     int pairWithMaxSum(vector<int> &arr) {
         
         int n=arr.size();
-        long long int maxx=-1;
+        long long int maxx=0;
         for(int i=0;i<n-1;i++)
         {
-            long long int sum=0;
-            for(int j=i;j<i+2;j++)
+            if(arr[i]+arr[i+1]>maxx)
             {
-                sum=sum+arr[j];
+                maxx=arr[i]+arr[i+1];
             }
-            maxx=max(maxx,sum);
         }
         return maxx;
     }
