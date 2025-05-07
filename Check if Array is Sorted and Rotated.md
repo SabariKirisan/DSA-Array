@@ -17,20 +17,17 @@ You can rotate the array by x = 3 positions to begin on the element of value 3: 
 ```
 class Solution {
 public:
-    bool check(vector<int>& nums) {
+    bool check(vector<int>& nums) 
+    {
         int n=nums.size();
         int cnt=0;
-        int swap=0;
         for(int i=0;i<n;i++)
         {
-            if(nums[i] > nums[(i+1) % n]) 
-            {
-                swap=1;
-                cnt++;
-            }
-        }
-        if(swap==0) return true;
-        return (cnt==1);     
+            if(nums[i]>nums[(i+1)%n])
+            cnt++;
+        }   
+        if(cnt<=1) return true;
+        return false;
     }
 };
 ```
